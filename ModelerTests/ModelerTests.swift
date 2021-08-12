@@ -1,10 +1,3 @@
-//
-//  ModelerTests.swift
-//  ModelerTests
-//
-//  Created by Павел Заварин on 12.08.2021.
-//
-
 import XCTest
 @testable import Modeler
 

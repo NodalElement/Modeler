@@ -10,6 +10,13 @@
 		F7BDBDA826C4F2F800F8B059 /* Modeler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */; };
 		F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */; };
 		F7BDBDAF26C4F2F800F8B059 /* Modeler.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BDBDA126C4F2F800F8B059 /* Modeler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7BDBDBB26C4F38300F8B059 /* Atomic Representation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDBA26C4F38300F8B059 /* Atomic Representation.swift */; };
+		F7BDBDBE26C4F3F100F8B059 /* Atomic Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDBD26C4F3F100F8B059 /* Atomic Dispatch.swift */; };
+		F7BDBDC026C4F40500F8B059 /* Atomic Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDBF26C4F40500F8B059 /* Atomic Semaphore.swift */; };
+		F7BDBDC226C4F41700F8B059 /* Atomic Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDC126C4F41700F8B059 /* Atomic Lock.swift */; };
+		F7BDBDC426C4F5C200F8B059 /* Atomic Erasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDC326C4F5C200F8B059 /* Atomic Erasure.swift */; };
+		F7BDBDC626C4F76D00F8B059 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDC526C4F76D00F8B059 /* Atomic.swift */; };
+		F7BDBDCA26C4FC8700F8B059 /* Atomic Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDC926C4FC8700F8B059 /* Atomic Testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		F7BDBDA726C4F2F800F8B059 /* ModelerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelerTests.swift; sourceTree = "<group>"; };
 		F7BDBDAE26C4F2F800F8B059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7BDBDBA26C4F38300F8B059 /* Atomic Representation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Representation.swift"; sourceTree = "<group>"; };
+		F7BDBDBD26C4F3F100F8B059 /* Atomic Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Dispatch.swift"; sourceTree = "<group>"; };
+		F7BDBDBF26C4F40500F8B059 /* Atomic Semaphore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Semaphore.swift"; sourceTree = "<group>"; };
+		F7BDBDC126C4F41700F8B059 /* Atomic Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Lock.swift"; sourceTree = "<group>"; };
+		F7BDBDC326C4F5C200F8B059 /* Atomic Erasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Erasure.swift"; sourceTree = "<group>"; };
+		F7BDBDC526C4F76D00F8B059 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		F7BDBDC926C4FC8700F8B059 /* Atomic Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Testing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,7 @@
 		F7BDBDA026C4F2F800F8B059 /* Modeler */ = {
 			isa = PBXGroup;
 			children = (
+				F7BDBDB826C4F35200F8B059 /* Dispatch */,
 				F7BDBDA126C4F2F800F8B059 /* Modeler.h */,
 				F7BDBDA226C4F2F800F8B059 /* Info.plist */,
 			);
@@ -81,9 +96,47 @@
 			isa = PBXGroup;
 			children = (
 				F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */,
+				F7BDBDC726C4FA8500F8B059 /* Dispatch */,
 				F7BDBDAE26C4F2F800F8B059 /* Info.plist */,
 			);
 			path = ModelerTests;
+			sourceTree = "<group>";
+		};
+		F7BDBDB826C4F35200F8B059 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDBDB926C4F36600F8B059 /* Atomic */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		F7BDBDB926C4F36600F8B059 /* Atomic */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDBDC526C4F76D00F8B059 /* Atomic.swift */,
+				F7BDBDC326C4F5C200F8B059 /* Atomic Erasure.swift */,
+				F7BDBDBA26C4F38300F8B059 /* Atomic Representation.swift */,
+				F7BDBDBC26C4F3C800F8B059 /* Variation */,
+			);
+			path = Atomic;
+			sourceTree = "<group>";
+		};
+		F7BDBDBC26C4F3C800F8B059 /* Variation */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDBDBD26C4F3F100F8B059 /* Atomic Dispatch.swift */,
+				F7BDBDBF26C4F40500F8B059 /* Atomic Semaphore.swift */,
+				F7BDBDC126C4F41700F8B059 /* Atomic Lock.swift */,
+			);
+			path = Variation;
+			sourceTree = "<group>";
+		};
+		F7BDBDC726C4FA8500F8B059 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDBDC926C4FC8700F8B059 /* Atomic Testing.swift */,
+			);
+			path = Dispatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +200,7 @@
 				TargetAttributes = {
 					F7BDBD9D26C4F2F800F8B059 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					F7BDBDA626C4F2F800F8B059 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BDBDC426C4F5C200F8B059 /* Atomic Erasure.swift in Sources */,
+				F7BDBDBB26C4F38300F8B059 /* Atomic Representation.swift in Sources */,
+				F7BDBDC026C4F40500F8B059 /* Atomic Semaphore.swift in Sources */,
+				F7BDBDC226C4F41700F8B059 /* Atomic Lock.swift in Sources */,
+				F7BDBDC626C4F76D00F8B059 /* Atomic.swift in Sources */,
+				F7BDBDBE26C4F3F100F8B059 /* Atomic Dispatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BDBDCA26C4FC8700F8B059 /* Atomic Testing.swift in Sources */,
 				F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +402,7 @@
 		F7BDBDB326C4F2F800F8B059 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
@@ -349,6 +411,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Modeler/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +420,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Nodal.Modeler;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +430,7 @@
 		F7BDBDB426C4F2F800F8B059 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
@@ -373,6 +439,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Modeler/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Nodal.Modeler;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +457,7 @@
 		F7BDBDB626C4F2F800F8B059 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
 				INFOPLIST_FILE = ModelerTests/Info.plist;
@@ -407,6 +476,7 @@
 		F7BDBDB726C4F2F800F8B059 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
 				INFOPLIST_FILE = ModelerTests/Info.plist;
