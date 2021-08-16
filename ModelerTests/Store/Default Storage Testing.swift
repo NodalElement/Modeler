@@ -10,8 +10,11 @@ final class DefaultStorageTesting: XCTestCase {
     /// Invoke this method to run the test.
     func testExample() throws {
         var user = DefaultStorage(key: "user", defaultValue: User(name: .pavel, age: 25, city: .petersburg))
+        let newValue = User(name: .maria, age: 20, city: .moscow)
         
-        changeDefaultStorage(&user, newValue: User(name: .maria, age: 20, city: .moscow))
+        changeDefaultStorage(&user, newValue: newValue)
+        
+        XCTAssert(user.wrappedValue.name == newValue.name, "Test failed!")
     }
     
     private func changeDefaultStorage<Value: Equatable>(_ defaultStorage: inout DefaultStorage<Value>, newValue: Value) {
