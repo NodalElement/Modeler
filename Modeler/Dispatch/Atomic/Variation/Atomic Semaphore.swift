@@ -6,18 +6,16 @@ struct AtomicSemaphore<Value>: AtomicRepresentation {
     private var _value: Value
     
     init(_ value: Value) {
-        self._value = value
+        _value = value
     }
     
     var value: Value {
-        get {
-            self.semaphore.lock { self._value }
-        }
+        semaphore.lock { _value }
     }
     
     mutating func mutate<T>(_ transform: (inout Value) throws -> T) rethrows -> T {
-        try self.semaphore.lock {
-            try transform(&self._value)
+        try semaphore.lock {
+            try transform(&_value)
         }
     }
     
@@ -26,8 +24,8 @@ struct AtomicSemaphore<Value>: AtomicRepresentation {
 private extension DispatchSemaphore {
     
     func lock<T>(execute task: () throws -> T) rethrows -> T {
-        self.wait()
-        defer { self.signal() }
+        wait()
+        defer { signal() }
         return try task()
     }
     

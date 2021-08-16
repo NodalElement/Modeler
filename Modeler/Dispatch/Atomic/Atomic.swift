@@ -13,22 +13,18 @@ public struct Atomic<Value>: AtomicRepresentation {
     public init(value: Value, state: State = .lock) {
         switch state {
         case .dispatch:
-            self.anyAtomic = AnyAtomic(AtomicDispatch(value))
+            anyAtomic = AnyAtomic(AtomicDispatch(value))
         case .semaphore:
-            self.anyAtomic = AnyAtomic(AtomicSemaphore(value))
+            anyAtomic = AnyAtomic(AtomicSemaphore(value))
         case .lock:
-            self.anyAtomic = AnyAtomic(AtomicLock(value))
+            anyAtomic = AnyAtomic(AtomicLock(value))
         }
     }
     
-    public var value: Value {
-        get {
-            return self.anyAtomic.value
-        }
-    }
+    public var value: Value { anyAtomic.value }
     
     public mutating func mutate<T>(_ transform: (inout Value) throws -> T) rethrows -> T {
-        try self.anyAtomic.mutate(transform)
+        try anyAtomic.mutate(transform)
     }
     
 }

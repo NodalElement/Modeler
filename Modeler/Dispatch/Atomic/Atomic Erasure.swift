@@ -14,7 +14,7 @@ private class AnyAtomicBox<Value>: AtomicRepresentation {
 }
 
 // MARK: - Atomic Box
-private class AtomicBox<U: AtomicRepresentation>: AnyAtomicBox<U.Value> {
+private final class AtomicBox<U: AtomicRepresentation>: AnyAtomicBox<U.Value> {
     
     private var representation: U
     
@@ -23,34 +23,30 @@ private class AtomicBox<U: AtomicRepresentation>: AnyAtomicBox<U.Value> {
     }
     
     override var value: Value {
-        get {
-            return self.representation.value
-        }
+        representation.value
     }
     
     override func mutate<T>(_ transform: (inout U.Value) throws -> T) rethrows -> T {
-        try self.representation.mutate(transform)
+        try representation.mutate(transform)
     }
     
 }
 
 // MARK: - Any Atomic - (Atomic Erasure)
-class AnyAtomic<Value>: AtomicRepresentation {
+final class AnyAtomic<Value>: AtomicRepresentation {
     
     private let atomicBox: AnyAtomicBox<Value>
     
     init<U: AtomicRepresentation>(_ representation: U) where U.Value == Value {
-        self.atomicBox = AtomicBox(representation)
+        atomicBox = AtomicBox(representation)
     }
     
     var value: Value {
-        get {
-            return self.atomicBox.value
-        }
+        atomicBox.value
     }
     
     func mutate<T>(_ transform: (inout Value) throws -> T) rethrows -> T {
-        try self.atomicBox.mutate(transform)
+        try atomicBox.mutate(transform)
     }
     
 }

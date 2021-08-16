@@ -17,6 +17,10 @@
 		F7BDBDC426C4F5C200F8B059 /* Atomic Erasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDC326C4F5C200F8B059 /* Atomic Erasure.swift */; };
 		F7BDBDC626C4F76D00F8B059 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDC526C4F76D00F8B059 /* Atomic.swift */; };
 		F7BDBDCA26C4FC8700F8B059 /* Atomic Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDC926C4FC8700F8B059 /* Atomic Testing.swift */; };
+		F7BDBDCE26C5018400F8B059 /* User Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDCD26C5018400F8B059 /* User Defaults.swift */; };
+		F7BDBDD026C5020A00F8B059 /* Default Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDCF26C5020A00F8B059 /* Default Storage.swift */; };
+		F7D7A43026C7C34F004CA958 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7A42F26C7C34F004CA958 /* Optional.swift */; };
+		F7D7A43326C7CD08004CA958 /* Default Storage Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7A43226C7CD08004CA958 /* Default Storage Testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		F7BDBDC326C4F5C200F8B059 /* Atomic Erasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Erasure.swift"; sourceTree = "<group>"; };
 		F7BDBDC526C4F76D00F8B059 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		F7BDBDC926C4FC8700F8B059 /* Atomic Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atomic Testing.swift"; sourceTree = "<group>"; };
+		F7BDBDCD26C5018400F8B059 /* User Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Defaults.swift"; sourceTree = "<group>"; };
+		F7BDBDCF26C5020A00F8B059 /* Default Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Default Storage.swift"; sourceTree = "<group>"; };
+		F7D7A42F26C7C34F004CA958 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		F7D7A43226C7CD08004CA958 /* Default Storage Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Default Storage Testing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,8 @@
 		F7BDBDA026C4F2F800F8B059 /* Modeler */ = {
 			isa = PBXGroup;
 			children = (
+				F7D7A42E26C7C307004CA958 /* Stuff */,
+				F7BDBDCB26C5015B00F8B059 /* Store */,
 				F7BDBDB826C4F35200F8B059 /* Dispatch */,
 				F7BDBDA126C4F2F800F8B059 /* Modeler.h */,
 				F7BDBDA226C4F2F800F8B059 /* Info.plist */,
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */,
+				F7D7A43126C7CCD2004CA958 /* Store */,
 				F7BDBDC726C4FA8500F8B059 /* Dispatch */,
 				F7BDBDAE26C4F2F800F8B059 /* Info.plist */,
 			);
@@ -137,6 +148,31 @@
 				F7BDBDC926C4FC8700F8B059 /* Atomic Testing.swift */,
 			);
 			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		F7BDBDCB26C5015B00F8B059 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDBDCF26C5020A00F8B059 /* Default Storage.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F7D7A42E26C7C307004CA958 /* Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDBDCD26C5018400F8B059 /* User Defaults.swift */,
+				F7D7A42F26C7C34F004CA958 /* Optional.swift */,
+			);
+			path = Stuff;
+			sourceTree = "<group>";
+		};
+		F7D7A43126C7CCD2004CA958 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F7D7A43226C7CD08004CA958 /* Default Storage Testing.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7BDBDC426C4F5C200F8B059 /* Atomic Erasure.swift in Sources */,
+				F7BDBDD026C5020A00F8B059 /* Default Storage.swift in Sources */,
+				F7D7A43026C7C34F004CA958 /* Optional.swift in Sources */,
 				F7BDBDBB26C4F38300F8B059 /* Atomic Representation.swift in Sources */,
 				F7BDBDC026C4F40500F8B059 /* Atomic Semaphore.swift in Sources */,
+				F7BDBDCE26C5018400F8B059 /* User Defaults.swift in Sources */,
 				F7BDBDC226C4F41700F8B059 /* Atomic Lock.swift in Sources */,
 				F7BDBDC626C4F76D00F8B059 /* Atomic.swift in Sources */,
 				F7BDBDBE26C4F3F100F8B059 /* Atomic Dispatch.swift in Sources */,
@@ -263,6 +302,7 @@
 			files = (
 				F7BDBDCA26C4FC8700F8B059 /* Atomic Testing.swift in Sources */,
 				F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */,
+				F7D7A43326C7CD08004CA958 /* Default Storage Testing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

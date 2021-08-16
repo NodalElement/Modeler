@@ -6,18 +6,16 @@ struct AtomicDispatch<Value>: AtomicRepresentation {
     private var _value: Value
     
     init(_ value: Value) {
-        self._value = value
+        _value = value
     }
     
     var value: Value {
-        get {
-            self.queue.sync { self._value }
-        }
+        queue.sync { _value }
     }
     
     mutating func mutate<T>(_ transform: (inout Value) throws -> T) rethrows -> T {
-        try self.queue.sync(flags: .barrier) {
-            try transform(&self._value)
+        try queue.sync(flags: .barrier) {
+            try transform(&_value)
         }
     }
     
