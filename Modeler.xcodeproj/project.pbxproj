@@ -12,6 +12,24 @@
 		F7706F4226D374340084E063 /* Dispatch Timer Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4126D374340084E063 /* Dispatch Timer Testing.swift */; };
 		F7706F4726D392A10084E063 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4626D392A10084E063 /* Validation.swift */; };
 		F7706F4926D3959D0084E063 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4826D3959D0084E063 /* String.swift */; };
+		F7706F4B26D39EDD0084E063 /* Net Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4A26D39EDD0084E063 /* Net Typealias.swift */; };
+		F7706F5126D3B2F10084E063 /* Net Dispatcher Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5026D3B2F10084E063 /* Net Dispatcher Protocol.swift */; };
+		F7706F5326D3B3030084E063 /* Net Environment Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5226D3B3030084E063 /* Net Environment Protocol.swift */; };
+		F7706F5526D3B3100084E063 /* Net Operating Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5426D3B3100084E063 /* Net Operating Protocol.swift */; };
+		F7706F5726D3B31A0084E063 /* Net Request Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5626D3B31A0084E063 /* Net Request Protocol.swift */; };
+		F7706F5926D3B3240084E063 /* Net Session Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5826D3B3240084E063 /* Net Session Protocol.swift */; };
+		F7706F5C26D3B33A0084E063 /* API Net Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5B26D3B33A0084E063 /* API Net Dispatcher.swift */; };
+		F7706F5E26D3B3470084E063 /* API Net Operating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5D26D3B3470084E063 /* API Net Operating.swift */; };
+		F7706F6026D3B3590084E063 /* API Net Session + Net Session Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F5F26D3B3590084E063 /* API Net Session + Net Session Protocol.swift */; };
+		F7706F6226D3B3650084E063 /* API Net Session + URLSessionDownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6126D3B3650084E063 /* API Net Session + URLSessionDownloadDelegate.swift */; };
+		F7706F6426D3B3710084E063 /* API Net Session + URLSessionTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6326D3B3710084E063 /* API Net Session + URLSessionTaskDelegate.swift */; };
+		F7706F6626D3B37B0084E063 /* API Net Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6526D3B37B0084E063 /* API Net Session.swift */; };
+		F7706F6826D3B3980084E063 /* API Net Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6726D3B3980084E063 /* API Net Error.swift */; };
+		F7706F6A26D3B3A20084E063 /* HTTP Status Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6926D3B3A20084E063 /* HTTP Status Code.swift */; };
+		F7706F6C26D3B3AB0084E063 /* Net Operating Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6B26D3B3AB0084E063 /* Net Operating Result.swift */; };
+		F7706F6E26D3B3B40084E063 /* Net Request Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6D26D3B3B40084E063 /* Net Request Method.swift */; };
+		F7706F7026D3B3BE0084E063 /* Net Request Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6F26D3B3BE0084E063 /* Net Request Type.swift */; };
+		F7706F7226D3B3C90084E063 /* Net Response Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F7126D3B3C90084E063 /* Net Response Type.swift */; };
 		F7BDBDA826C4F2F800F8B059 /* Modeler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */; };
 		F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */; };
 		F7BDBDAF26C4F2F800F8B059 /* Modeler.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BDBDA126C4F2F800F8B059 /* Modeler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +62,24 @@
 		F7706F4126D374340084E063 /* Dispatch Timer Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch Timer Testing.swift"; sourceTree = "<group>"; };
 		F7706F4626D392A10084E063 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		F7706F4826D3959D0084E063 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F7706F4A26D39EDD0084E063 /* Net Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Typealias.swift"; sourceTree = "<group>"; };
+		F7706F5026D3B2F10084E063 /* Net Dispatcher Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Dispatcher Protocol.swift"; sourceTree = "<group>"; };
+		F7706F5226D3B3030084E063 /* Net Environment Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Environment Protocol.swift"; sourceTree = "<group>"; };
+		F7706F5426D3B3100084E063 /* Net Operating Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Operating Protocol.swift"; sourceTree = "<group>"; };
+		F7706F5626D3B31A0084E063 /* Net Request Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Request Protocol.swift"; sourceTree = "<group>"; };
+		F7706F5826D3B3240084E063 /* Net Session Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Session Protocol.swift"; sourceTree = "<group>"; };
+		F7706F5B26D3B33A0084E063 /* API Net Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Net Dispatcher.swift"; sourceTree = "<group>"; };
+		F7706F5D26D3B3470084E063 /* API Net Operating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Net Operating.swift"; sourceTree = "<group>"; };
+		F7706F5F26D3B3590084E063 /* API Net Session + Net Session Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Net Session + Net Session Protocol.swift"; sourceTree = "<group>"; };
+		F7706F6126D3B3650084E063 /* API Net Session + URLSessionDownloadDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Net Session + URLSessionDownloadDelegate.swift"; sourceTree = "<group>"; };
+		F7706F6326D3B3710084E063 /* API Net Session + URLSessionTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Net Session + URLSessionTaskDelegate.swift"; sourceTree = "<group>"; };
+		F7706F6526D3B37B0084E063 /* API Net Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Net Session.swift"; sourceTree = "<group>"; };
+		F7706F6726D3B3980084E063 /* API Net Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Net Error.swift"; sourceTree = "<group>"; };
+		F7706F6926D3B3A20084E063 /* HTTP Status Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTP Status Code.swift"; sourceTree = "<group>"; };
+		F7706F6B26D3B3AB0084E063 /* Net Operating Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Operating Result.swift"; sourceTree = "<group>"; };
+		F7706F6D26D3B3B40084E063 /* Net Request Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Request Method.swift"; sourceTree = "<group>"; };
+		F7706F6F26D3B3BE0084E063 /* Net Request Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Request Type.swift"; sourceTree = "<group>"; };
+		F7706F7126D3B3C90084E063 /* Net Response Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Response Type.swift"; sourceTree = "<group>"; };
 		F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modeler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDBDA126C4F2F800F8B059 /* Modeler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modeler.h; sourceTree = "<group>"; };
 		F7BDBDA226C4F2F800F8B059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,8 +121,65 @@
 		F7706F4526D390830084E063 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F7706F4A26D39EDD0084E063 /* Net Typealias.swift */,
+				F7706F4E26D39F4D0084E063 /* Enumeration */,
+				F7706F4D26D39F460084E063 /* Module */,
+				F7706F4C26D39F380084E063 /* Protocol */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F7706F4C26D39F380084E063 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F7706F5026D3B2F10084E063 /* Net Dispatcher Protocol.swift */,
+				F7706F5226D3B3030084E063 /* Net Environment Protocol.swift */,
+				F7706F5426D3B3100084E063 /* Net Operating Protocol.swift */,
+				F7706F5626D3B31A0084E063 /* Net Request Protocol.swift */,
+				F7706F5826D3B3240084E063 /* Net Session Protocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F7706F4D26D39F460084E063 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F7706F5B26D3B33A0084E063 /* API Net Dispatcher.swift */,
+				F7706F5D26D3B3470084E063 /* API Net Operating.swift */,
+				F7706F5A26D3B32E0084E063 /* API Net Session */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F7706F4E26D39F4D0084E063 /* Enumeration */ = {
+			isa = PBXGroup;
+			children = (
+				F7706F6726D3B3980084E063 /* API Net Error.swift */,
+				F7706F6926D3B3A20084E063 /* HTTP Status Code.swift */,
+				F7706F6B26D3B3AB0084E063 /* Net Operating Result.swift */,
+				F7706F6D26D3B3B40084E063 /* Net Request Method.swift */,
+				F7706F6F26D3B3BE0084E063 /* Net Request Type.swift */,
+				F7706F7126D3B3C90084E063 /* Net Response Type.swift */,
+			);
+			path = Enumeration;
+			sourceTree = "<group>";
+		};
+		F7706F4F26D39F550084E063 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F7706F5A26D3B32E0084E063 /* API Net Session */ = {
+			isa = PBXGroup;
+			children = (
+				F7706F6526D3B37B0084E063 /* API Net Session.swift */,
+				F7706F5F26D3B3590084E063 /* API Net Session + Net Session Protocol.swift */,
+				F7706F6126D3B3650084E063 /* API Net Session + URLSessionDownloadDelegate.swift */,
+				F7706F6326D3B3710084E063 /* API Net Session + URLSessionTaskDelegate.swift */,
+			);
+			path = "API Net Session";
 			sourceTree = "<group>";
 		};
 		F7BDBD9426C4F2F800F8B059 = {
@@ -124,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */,
+				F7706F4F26D39F550084E063 /* Network */,
 				F7D7A43126C7CCD2004CA958 /* Store */,
 				F7BDBDC726C4FA8500F8B059 /* Dispatch */,
 				F7BDBDAE26C4F2F800F8B059 /* Info.plist */,
@@ -307,19 +401,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7706F6E26D3B3B40084E063 /* Net Request Method.swift in Sources */,
+				F7706F6C26D3B3AB0084E063 /* Net Operating Result.swift in Sources */,
+				F7706F6026D3B3590084E063 /* API Net Session + Net Session Protocol.swift in Sources */,
 				F7706F4726D392A10084E063 /* Validation.swift in Sources */,
+				F7706F6A26D3B3A20084E063 /* HTTP Status Code.swift in Sources */,
 				F7706F4926D3959D0084E063 /* String.swift in Sources */,
 				F7BDBDC426C4F5C200F8B059 /* Atomic Erasure.swift in Sources */,
 				F711F78526D2A05C00885740 /* Data Converter.swift in Sources */,
 				F7BDBDD026C5020A00F8B059 /* Default Storage.swift in Sources */,
+				F7706F7026D3B3BE0084E063 /* Net Request Type.swift in Sources */,
 				F7D7A43026C7C34F004CA958 /* Optional.swift in Sources */,
+				F7706F6826D3B3980084E063 /* API Net Error.swift in Sources */,
 				F7BDBDBB26C4F38300F8B059 /* Atomic Representation.swift in Sources */,
+				F7706F5C26D3B33A0084E063 /* API Net Dispatcher.swift in Sources */,
+				F7706F5326D3B3030084E063 /* Net Environment Protocol.swift in Sources */,
 				F7BDBDC026C4F40500F8B059 /* Atomic Semaphore.swift in Sources */,
 				F7706F4026D371160084E063 /* Dispatch Timer.swift in Sources */,
+				F7706F6226D3B3650084E063 /* API Net Session + URLSessionDownloadDelegate.swift in Sources */,
+				F7706F6626D3B37B0084E063 /* API Net Session.swift in Sources */,
 				F7BDBDCE26C5018400F8B059 /* User Defaults.swift in Sources */,
+				F7706F5726D3B31A0084E063 /* Net Request Protocol.swift in Sources */,
 				F7BDBDC226C4F41700F8B059 /* Atomic Lock.swift in Sources */,
+				F7706F7226D3B3C90084E063 /* Net Response Type.swift in Sources */,
+				F7706F5126D3B2F10084E063 /* Net Dispatcher Protocol.swift in Sources */,
+				F7706F5E26D3B3470084E063 /* API Net Operating.swift in Sources */,
 				F7BDBDC626C4F76D00F8B059 /* Atomic.swift in Sources */,
+				F7706F5526D3B3100084E063 /* Net Operating Protocol.swift in Sources */,
 				F7BDBDBE26C4F3F100F8B059 /* Atomic Dispatch.swift in Sources */,
+				F7706F5926D3B3240084E063 /* Net Session Protocol.swift in Sources */,
+				F7706F6426D3B3710084E063 /* API Net Session + URLSessionTaskDelegate.swift in Sources */,
+				F7706F4B26D39EDD0084E063 /* Net Typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
