@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F711F78526D2A05C00885740 /* Data Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F711F78426D2A05C00885740 /* Data Converter.swift */; };
 		F7706F4026D371160084E063 /* Dispatch Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F3F26D371160084E063 /* Dispatch Timer.swift */; };
+		F7706F4226D374340084E063 /* Dispatch Timer Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4126D374340084E063 /* Dispatch Timer Testing.swift */; };
 		F7BDBDA826C4F2F800F8B059 /* Modeler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */; };
 		F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */; };
 		F7BDBDAF26C4F2F800F8B059 /* Modeler.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BDBDA126C4F2F800F8B059 /* Modeler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		F711F78426D2A05C00885740 /* Data Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Converter.swift"; sourceTree = "<group>"; };
 		F7706F3F26D371160084E063 /* Dispatch Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch Timer.swift"; sourceTree = "<group>"; };
+		F7706F4126D374340084E063 /* Dispatch Timer Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch Timer Testing.swift"; sourceTree = "<group>"; };
 		F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modeler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDBDA126C4F2F800F8B059 /* Modeler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modeler.h; sourceTree = "<group>"; };
 		F7BDBDA226C4F2F800F8B059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F7BDBDC926C4FC8700F8B059 /* Atomic Testing.swift */,
+				F7706F4126D374340084E063 /* Dispatch Timer Testing.swift */,
 			);
 			path = Dispatch;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				F7BDBDCA26C4FC8700F8B059 /* Atomic Testing.swift in Sources */,
 				F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */,
+				F7706F4226D374340084E063 /* Dispatch Timer Testing.swift in Sources */,
 				F7D7A43326C7CD08004CA958 /* Default Storage Testing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
