@@ -54,7 +54,7 @@ class DispatchTimerTesting: XCTestCase {
     
     /// Resume `DispatchTimer`.
     private func resume() {
-        for _ in 0 ... 4 { sut.resume() }
+        for _ in 0...4 { sut.resume() }
     }
     
 }

@@ -61,9 +61,8 @@ public final class EqualValidation<U: Comparable>: ObservableObject {
     public var publisher: AnyPublisher<Bool, Never> {
         Publishers.CombineLatest($first, $second)
             .debounce(for: 0.2, scheduler: RunLoop.main)
-            .map { (one, two) in
-                return one == two
-            }.eraseToAnyPublisher()
+            .map { $0 == $1 }
+            .eraseToAnyPublisher()
     }
     
 }
