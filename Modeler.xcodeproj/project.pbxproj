@@ -10,6 +10,8 @@
 		F711F78526D2A05C00885740 /* Data Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F711F78426D2A05C00885740 /* Data Converter.swift */; };
 		F7706F4026D371160084E063 /* Dispatch Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F3F26D371160084E063 /* Dispatch Timer.swift */; };
 		F7706F4226D374340084E063 /* Dispatch Timer Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4126D374340084E063 /* Dispatch Timer Testing.swift */; };
+		F7706F4726D392A10084E063 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4626D392A10084E063 /* Validation.swift */; };
+		F7706F4926D3959D0084E063 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F4826D3959D0084E063 /* String.swift */; };
 		F7BDBDA826C4F2F800F8B059 /* Modeler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */; };
 		F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */; };
 		F7BDBDAF26C4F2F800F8B059 /* Modeler.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BDBDA126C4F2F800F8B059 /* Modeler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +42,8 @@
 		F711F78426D2A05C00885740 /* Data Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Converter.swift"; sourceTree = "<group>"; };
 		F7706F3F26D371160084E063 /* Dispatch Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch Timer.swift"; sourceTree = "<group>"; };
 		F7706F4126D374340084E063 /* Dispatch Timer Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch Timer Testing.swift"; sourceTree = "<group>"; };
+		F7706F4626D392A10084E063 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		F7706F4826D3959D0084E063 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modeler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDBDA126C4F2F800F8B059 /* Modeler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modeler.h; sourceTree = "<group>"; };
 		F7BDBDA226C4F2F800F8B059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +82,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7706F4526D390830084E063 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F7BDBD9426C4F2F800F8B059 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +110,7 @@
 		F7BDBDA026C4F2F800F8B059 /* Modeler */ = {
 			isa = PBXGroup;
 			children = (
+				F7706F4526D390830084E063 /* Network */,
 				F7D7A42E26C7C307004CA958 /* Stuff */,
 				F7BDBDCB26C5015B00F8B059 /* Store */,
 				F7BDBDB826C4F35200F8B059 /* Dispatch */,
@@ -172,6 +184,8 @@
 				F7BDBDCD26C5018400F8B059 /* User Defaults.swift */,
 				F7D7A42F26C7C34F004CA958 /* Optional.swift */,
 				F711F78426D2A05C00885740 /* Data Converter.swift */,
+				F7706F4626D392A10084E063 /* Validation.swift */,
+				F7706F4826D3959D0084E063 /* String.swift */,
 			);
 			path = Stuff;
 			sourceTree = "<group>";
@@ -293,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7706F4726D392A10084E063 /* Validation.swift in Sources */,
+				F7706F4926D3959D0084E063 /* String.swift in Sources */,
 				F7BDBDC426C4F5C200F8B059 /* Atomic Erasure.swift in Sources */,
 				F711F78526D2A05C00885740 /* Data Converter.swift in Sources */,
 				F7BDBDD026C5020A00F8B059 /* Default Storage.swift in Sources */,
