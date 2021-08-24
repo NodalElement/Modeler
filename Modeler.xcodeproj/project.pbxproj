@@ -30,6 +30,8 @@
 		F7706F6E26D3B3B40084E063 /* Net Request Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6D26D3B3B40084E063 /* Net Request Method.swift */; };
 		F7706F7026D3B3BE0084E063 /* Net Request Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F6F26D3B3BE0084E063 /* Net Request Type.swift */; };
 		F7706F7226D3B3C90084E063 /* Net Response Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F7126D3B3C90084E063 /* Net Response Type.swift */; };
+		F7706F7A26D3DAF10084E063 /* Net Environment Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F7926D3DAF10084E063 /* Net Environment Type.swift */; };
+		F795E85826D53820007F9F90 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795E85726D53820007F9F90 /* Cache.swift */; };
 		F7BDBDA826C4F2F800F8B059 /* Modeler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */; };
 		F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */; };
 		F7BDBDAF26C4F2F800F8B059 /* Modeler.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BDBDA126C4F2F800F8B059 /* Modeler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,6 +82,8 @@
 		F7706F6D26D3B3B40084E063 /* Net Request Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Request Method.swift"; sourceTree = "<group>"; };
 		F7706F6F26D3B3BE0084E063 /* Net Request Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Request Type.swift"; sourceTree = "<group>"; };
 		F7706F7126D3B3C90084E063 /* Net Response Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Response Type.swift"; sourceTree = "<group>"; };
+		F7706F7926D3DAF10084E063 /* Net Environment Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Environment Type.swift"; sourceTree = "<group>"; };
+		F795E85726D53820007F9F90 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modeler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDBDA126C4F2F800F8B059 /* Modeler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modeler.h; sourceTree = "<group>"; };
 		F7BDBDA226C4F2F800F8B059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,9 +171,11 @@
 		F7706F4F26D39F550084E063 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F7706F7926D3DAF10084E063 /* Net Environment Type.swift */,
 			);
-			path = Network;
-			sourceTree = "<group>";
+			name = Network;
+			path = /Users/pavelzavarin/Desktop/Nodal/Modeler/ModelerTests/Network;
+			sourceTree = "<absolute>";
 		};
 		F7706F5A26D3B32E0084E063 /* API Net Session */ = {
 			isa = PBXGroup;
@@ -268,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				F7BDBDCF26C5020A00F8B059 /* Default Storage.swift */,
+				F795E85726D53820007F9F90 /* Cache.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -422,6 +429,7 @@
 				F7706F6626D3B37B0084E063 /* API Net Session.swift in Sources */,
 				F7BDBDCE26C5018400F8B059 /* User Defaults.swift in Sources */,
 				F7706F5726D3B31A0084E063 /* Net Request Protocol.swift in Sources */,
+				F795E85826D53820007F9F90 /* Cache.swift in Sources */,
 				F7BDBDC226C4F41700F8B059 /* Atomic Lock.swift in Sources */,
 				F7706F7226D3B3C90084E063 /* Net Response Type.swift in Sources */,
 				F7706F5126D3B2F10084E063 /* Net Dispatcher Protocol.swift in Sources */,
@@ -443,6 +451,7 @@
 				F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */,
 				F7706F4226D374340084E063 /* Dispatch Timer Testing.swift in Sources */,
 				F7D7A43326C7CD08004CA958 /* Default Storage Testing.swift in Sources */,
+				F7706F7A26D3DAF10084E063 /* Net Environment Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

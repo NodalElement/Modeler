@@ -16,10 +16,7 @@ public protocol NetRequestProtocol {
     
     /// The request type.
     var requestType: NetRequestType { get }
-    
-    /// The expected response type.
-    var responseType: NetResponseType { get }
-    
+        
     /// Upload/download progress handler.
     var progressHandler: NetProgressHandler? { get set }
 }
