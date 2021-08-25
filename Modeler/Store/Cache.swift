@@ -14,8 +14,8 @@ public final class Cache<Key: Hashable, Value> {
     ) {
         self.dateProvider = dateProvider
         self.entryLifetime = entryLifetime
-        wrapped.countLimit = maximumEntryCount
-        wrapped.delegate = keyTracker
+        self.wrapped.countLimit = maximumEntryCount
+        self.wrapped.delegate = keyTracker
     }
     
     public subscript(forKey key: Key) -> Value? {
@@ -27,6 +27,10 @@ public final class Cache<Key: Hashable, Value> {
             
             insertValue(value, forKey: key)
         }
+    }
+    
+    public var count: Int {
+        return keyTracker.keys.count
     }
     
 }
@@ -137,12 +141,16 @@ extension Cache: Codable where Key: Codable, Value: Codable {
 extension Cache where Key: Codable, Value: Codable {
     
     public func saveToDisk(withName name: String, _ fileManager: FileManager = .default) throws {
-        let folderURL = fileManager.urls(for: .cachesDirectory, in: .userDomainMask)
-        
-        guard let fileURL = folderURL.first?.appendingPathComponent(name + ".cache") else { fatalError() }
-        let encoder = JSONEncoder()
-        let data = try encoder.encode(self)
-        try data.write(to: fileURL)
+        try storage(fileManager).save(value: self, forKey: name + ".cache")
+    }
+    
+    public func fetchFromDisk(withName name: String, _ fileManager: FileManager = .default) throws -> Cache {
+        return try storage(fileManager).fetchValue(forKey: name + ".cache")
+    }
+    
+    private func storage(_ fileManager: FileManager) -> CodableStorage {
+        let storage = FileStorage(fileManager: fileManager)
+        return CodableStorage(storage: storage)
     }
     
 }

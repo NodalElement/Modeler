@@ -28,18 +28,21 @@ final class DefaultStorageTesting: XCTestCase {
     
 }
 
-fileprivate struct User: Codable, Equatable {
+struct User: Codable, Equatable {
+    var id = UUID().uuidString
     var name: Name?
     var age: Int?
     var city: City?
     
     enum Name: String, Codable {
         case pavel      = "Pavel"
+        case nikita     = "Nikita"
         case maria      = "Maria"
         case alexandra  = "Alexandra"
     }
     
     enum City: String, Codable {
+        case london     = "London"
         case moscow     = "Moscow"
         case petersburg = "St. Petersburg"
         case kazan      = "Kazan"
