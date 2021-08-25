@@ -34,6 +34,7 @@
 		F7706F7A26D3DAF10084E063 /* Net Environment Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7706F7926D3DAF10084E063 /* Net Environment Type.swift */; };
 		F78DA28326D6A646005A52FA /* File Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78DA28226D6A646005A52FA /* File Storage.swift */; };
 		F78DA28826D6B352005A52FA /* Codable Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78DA28726D6B352005A52FA /* Codable Storage.swift */; };
+		F78DA28A26D6C209005A52FA /* File Storage Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78DA28926D6C209005A52FA /* File Storage Testing.swift */; };
 		F795E85826D53820007F9F90 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795E85726D53820007F9F90 /* Cache.swift */; };
 		F7BDBDA826C4F2F800F8B059 /* Modeler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */; };
 		F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BDBDAC26C4F2F800F8B059 /* ModelerTests.swift */; };
@@ -89,6 +90,7 @@
 		F7706F7926D3DAF10084E063 /* Net Environment Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Environment Type.swift"; sourceTree = "<group>"; };
 		F78DA28226D6A646005A52FA /* File Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File Storage.swift"; sourceTree = "<group>"; };
 		F78DA28726D6B352005A52FA /* Codable Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable Storage.swift"; sourceTree = "<group>"; };
+		F78DA28926D6C209005A52FA /* File Storage Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File Storage Testing.swift"; sourceTree = "<group>"; };
 		F795E85726D53820007F9F90 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		F7BDBD9E26C4F2F800F8B059 /* Modeler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Modeler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BDBDA126C4F2F800F8B059 /* Modeler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modeler.h; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 			children = (
 				F7D7A43226C7CD08004CA958 /* Default Storage Testing.swift */,
 				F73BA95426D62091005A3A8B /* Cache Testing.swift */,
+				F78DA28926D6C209005A52FA /* File Storage Testing.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78DA28A26D6C209005A52FA /* File Storage Testing.swift in Sources */,
 				F73BA95526D62091005A3A8B /* Cache Testing.swift in Sources */,
 				F7BDBDCA26C4FC8700F8B059 /* Atomic Testing.swift in Sources */,
 				F7BDBDAD26C4F2F800F8B059 /* ModelerTests.swift in Sources */,
